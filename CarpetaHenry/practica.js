@@ -1,4 +1,4 @@
-var jamon = ["juancarlo", "pepe", "alma", "roberto", "angela", "lechuga", "andalaconcha"];
+var jamon = ["acemeunptptpt", "juancarlo", "pepe", "alma", "roberto", "angela", "lechuga", "andalaconcha"];
 
 
 function filter(arrayOfStrings) {
