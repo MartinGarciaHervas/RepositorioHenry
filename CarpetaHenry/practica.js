@@ -1,19 +1,20 @@
 var jamon = ["acemeunptptpt", "juancarlo", "pepe", "alma", "roberto", "angela", "lechuga", "andalaconcha"];
 
+var objeto1 = {
+   nombre: "martin",
+   apellido: "garcia"
+};
 
-function filter(arrayOfStrings) {
-   // Debes identificar todos los elementos del arreglo que comiencen con la letra "a".
-   // Luego retorna un nuevo arreglo con estos elementos.
+var prueba = ["You", "are", "beautiful", "looking"];
+
+
+function sortArray(arrayOfStrings) {
+   // Recibes un arreglo de strings.
+   // Debe retornar un nuevo arreglo, pero con las palabras ordenadas en orden creciente a partir
+   // de la longitud de cada string.
+   // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
-   var newArray = [];
-
-   for(var i = 0; i < arrayOfStrings.length; i ++){
-      if((arrayOfStrings[i].split(""))[0] === "a"){
-         newArray.push(arrayOfStrings[i]);
-      };
-   }
-
-   return newArray;
+   return arrayOfStrings.sort((a, b) => a.length - b.length)
 }
 
-console.log(filter(jamon));
+console.log(sortArray(prueba));
